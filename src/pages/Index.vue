@@ -147,9 +147,6 @@
     watch: {
       numberOfPomodoros(newNumberOfPomodoros) {
         localStorage.numberOfPomodoros = newNumberOfPomodoros
-      },
-      totalTime(newTotalTime) {
-        localStorage.totalTime = newTotalTime
       }
     },
     computed: {
@@ -305,7 +302,6 @@
     },
     mounted() {
       if (localStorage.numberOfPomodoros) this.numberOfPomodoros = localStorage.numberOfPomodoros
-      if (localStorage.totalTime) this.totalTime = localStorage.totalTime
     }
   }
 </script>
